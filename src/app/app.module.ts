@@ -12,6 +12,9 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { ViewAllcoursesComponent } from './view-allcourses/view-allcourses.component';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 const myRoute:Routes=[
   {
@@ -55,12 +58,16 @@ const myRoute:Routes=[
     ContactUsComponent,
     AdminLoginComponent,
     EmployeeLoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    ViewAllcoursesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
