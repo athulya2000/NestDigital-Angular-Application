@@ -11,6 +11,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 const myRoute:Routes=[
   {
@@ -36,6 +37,10 @@ const myRoute:Routes=[
   {
     path:"employeelogin",
     component:EmployeeLoginComponent
+  },
+  {
+    path:"registration",
+    component:RegistrationComponent
   }
 ]
 
@@ -49,7 +54,8 @@ const myRoute:Routes=[
     AboutUsComponent,
     ContactUsComponent,
     AdminLoginComponent,
-    EmployeeLoginComponent
+    EmployeeLoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
