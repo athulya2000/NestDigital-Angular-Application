@@ -19,6 +19,7 @@ import { ViewAllfriendsComponent } from './view-allfriends/view-allfriends.compo
 import { Navbar2Component } from './navbar2/navbar2.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { AddFriendsComponent } from './add-friends/add-friends.component';
+import { NavBar3Component } from './nav-bar3/nav-bar3.component';
 
 const myRoute:Routes=[
   {
@@ -83,7 +84,8 @@ const myRoute:Routes=[
     ViewAllfriendsComponent,
     Navbar2Component,
     AddCourseComponent,
-    AddFriendsComponent
+    AddFriendsComponent,
+    NavBar3Component
   ],
   imports: [
     BrowserModule,
