@@ -5,16 +5,32 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CareersComponent } from './careers/careers.component';
+import { RouterModule, Routes } from '@angular/router';
+import { NavigationComponent } from './navigation/navigation.component';
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:HomeComponent
+  },
+  {
+    path:"/careers",
+    component:CareersComponent
+  }
+]
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CareersComponent
+    CareersComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
