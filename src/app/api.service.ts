@@ -13,4 +13,5 @@ export class ApiService {
   fetchFriends=()=>{
     return this.http.get("https://dummyapifriends.herokuapp.com/view")
   }
+  
 }
