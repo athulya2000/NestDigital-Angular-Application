@@ -15,6 +15,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ViewAllcoursesComponent } from './view-allcourses/view-allcourses.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { ViewAllfriendsComponent } from './view-allfriends/view-allfriends.component';
 
 const myRoute:Routes=[
   {
@@ -59,7 +60,8 @@ const myRoute:Routes=[
     AdminLoginComponent,
     EmployeeLoginComponent,
     RegistrationComponent,
-    ViewAllcoursesComponent
+    ViewAllcoursesComponent,
+    ViewAllfriendsComponent
   ],
   imports: [
     BrowserModule,
