@@ -8,6 +8,7 @@ import { CareersComponent } from './careers/careers.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const myRoute:Routes=[
   {
@@ -21,6 +22,10 @@ const myRoute:Routes=[
   {
     path:"about",
     component:AboutUsComponent
+  },
+  {
+    path:"contact",
+    component:ContactUsComponent
   }
 ]
 
@@ -31,7 +36,8 @@ const myRoute:Routes=[
     HomeComponent,
     CareersComponent,
     NavigationComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
