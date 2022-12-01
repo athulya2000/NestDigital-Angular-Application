@@ -10,9 +10,11 @@ export class ViewAllfriendsComponent {
 constructor(private api:ApiService){
   api.fetchFriends().subscribe(
     (response)=>{
+      this.loading=false
       this.friends=response
     }
   )
 }
 friends:any=[]
+loading:boolean=true
 }
